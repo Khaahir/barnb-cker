@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 1.6rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 120rem;
+}
+
+.book {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+}
+
+.book:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.book-details {
+  padding: 2rem;
+  width: 20rem;
+  line-height: 2rem;
+  background-color: grey;
+}
+
+#back-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#back-button:hover {
+  background-color: #0056b3;
+}
